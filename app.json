@@ -1,0 +1,29 @@
+{
+    "name": "SD Video Merge Bot",
+    "description": "A Simple Telegram Bot Which Allow Us To Merge Videos",
+    "repository": "https://github.com/Sadew451/video-merge-bot",
+    "logo": "https://telegra.ph/file/30dd7273c3bcd40bbd790.jpg",
+    "keywords": [
+        "python",
+        "telegram",
+        "ffmpeg"
+    ],
+    "buildpacks": [{
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  }, {
+    "url": "heroku/python"
+  }],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+    "env": {
+        "API_TOKEN": {
+            "description": "Bot Token From https://t.me/BotFather",
+            "value": "",
+            "required": true
+        }
+    }
+}
