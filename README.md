@@ -1,4 +1,4 @@
-# Video Merge Bot
+# SD Video Merge Bot
 
 Telegram bot made in Python to merge videos.
 
